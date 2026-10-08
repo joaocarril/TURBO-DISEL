@@ -1,0 +1,77 @@
+TURBO DISEL — Website
+=====================
+
+ESTRUTURA DA PASTA
+------------------
+turbo-disel/
+  index.html              Página inicial
+  materias.html           Matérias
+  explicadores.html       Explicadores
+  plano-estudante.html    Planos para estudantes (com o simulador do Plano por Nota)
+  plano-explicador.html   Planos para explicadores (com a calculadora e a tabela por nota)
+  sobre.html              Sobre Nós
+  contactos.html          Contactos e formulário
+  css/style.css           Todo o design (as cores estão no topo do ficheiro)
+  js/script.js            Toda a lógica (os DADOS EDITÁVEIS estão no topo do ficheiro)
+  images/                 Logótipo, imagens e fotografias
+
+
+COMO ABRIR
+----------
+Faz duplo clique em index.html. Abre no browser, sem instalar nada.
+Com internet são carregados os tipos de letra Poppins e Inter (sem internet o site usa
+o tipo de letra do sistema). Os botões do WhatsApp precisam de internet.
+
+Para publicar online, carrega a pasta inteira para um alojamento de sites estáticos
+(por exemplo o alojamento do teu domínio, Netlify ou GitHub Pages).
+
+
+ONDE ALTERAR O QUÊ
+------------------
+Quase tudo se altera num só sítio: o bloco CONFIG, no início de js/script.js.
+Muda apenas o texto entre aspas ou os números.
+
+1. Explicadores (nome, telefone, matérias, qualidades, biografia, avaliação)
+   js/script.js  ->  CONFIG > explicadores
+   Exemplo:  nome: 'Ana Silva',  telefone: '912345678',  materias: ['Matemática', 'Economia']
+
+2. Preços
+   js/script.js  ->  CONFIG > precosEstudante   (o que o aluno paga)
+                     CONFIG > valoresExplicador (o que o explicador recebe)
+
+3. Plano por Nota
+   js/script.js  ->  CONFIG > planoPorNota > valorMinimo  (hoje: 5)
+   Regra usada nas calculadoras e na tabela:  valorHora = Math.max(nota, 5)
+
+4. Número da central (WhatsApp)
+   js/script.js  ->  CONFIG > central > telefone  (9 dígitos, sem espaços)
+   Os links https://wa.me/351... são criados automaticamente a partir deste número.
+   Para o Google, altera também o número no bloco "application/ld+json" do index.html.
+
+5. Estatísticas (100+ alunos, 95% satisfação...) e horário
+   js/script.js  ->  CONFIG > estatisticas  e  CONFIG > horario
+
+6. Cores
+   css/style.css  ->  secção "1. VARIÁVEIS" (no topo)
+   --azul-escuro, --azul-eletrico, --dourado, etc. Basta mudar o código da cor (#...).
+
+7. Logótipo
+   Substitui images/logo.png (cabeçalho, fundo claro) e images/logo-branco.png
+   (rodapé, fundo escuro) por ficheiros com o mesmo nome. Ícone do separador: images/favicon.png.
+
+8. Imagens
+   Substitui pelos mesmos nomes de ficheiro:
+   images/hero.jpg                                  imagem principal (vertical, 4:5)
+   images/explicador1.jpg, explicador2.jpg, explicador3.jpg   fotografias (vertical, 4:5)
+   images/matematica.jpg, economia.jpg, ingles.jpg  imagens das matérias (horizontal, 3:2)
+
+
+NOTAS
+-----
+- Os textos [NOME DO EXPLICADOR 1], [NÚMERO DO EXPLICADOR 1], etc. que aparecem nos
+  ficheiros .html são só valores de reserva: o script.js troca-os pelos dados do CONFIG.
+  Altera sempre no CONFIG.
+- Enquanto o número de um explicador não estiver preenchido, o botão WhatsApp desse
+  explicador abre a conversa com a central, já com o nome do explicador na mensagem.
+- O site não tem servidor. O formulário valida os dados, prepara a mensagem e envia-a
+  para o WhatsApp da central com um clique.

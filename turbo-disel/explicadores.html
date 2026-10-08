@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TURBO DISEL | Os nossos explicadores</title>
+  <meta name="description" content="Conhece os explicadores da TURBO DISEL: profissionais de Matemática, Economia e Inglês focados nos resultados dos alunos. Fala com eles pelo WhatsApp.">
+  <meta name="theme-color" content="#0A1733">
+
+  <!-- Pré-visualização quando o link é partilhado (WhatsApp, redes sociais) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TURBO DISEL">
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:title" content="TURBO DISEL | Os nossos explicadores">
+  <meta property="og:description" content="Conhece os explicadores da TURBO DISEL: profissionais de Matemática, Economia e Inglês focados nos resultados dos alunos. Fala com eles pelo WhatsApp.">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+
+  <!-- Tipos de letra: Poppins (títulos) e Inter (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@500;600;700;800&amp;display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+  <!-- ===================== CABEÇALHO ===================== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <!-- Logo: para alterar, substitui o ficheiro images/logo.png -->
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="TURBO DISEL — página inicial" width="177" height="40">
+      </a>
+
+      <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="nav" id="menu-principal" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Início</a></li>
+          <li><a class="nav__link" href="materias.html">Matérias</a></li>
+          <li><a class="nav__link" href="explicadores.html" aria-current="page">Explicadores</a></li>
+          <li><a class="nav__link" href="plano-estudante.html">Plano Estudante</a></li>
+          <li><a class="nav__link" href="plano-explicador.html">Plano Explicador</a></li>
+          <li><a class="nav__link" href="sobre.html">Sobre Nós</a></li>
+          <li><a class="nav__link" href="contactos.html">Contactos</a></li>
+        </ul>
+        <a class="btn btn--primary nav__cta" href="contactos.html">Contactar agora</a>
+        <a class="btn btn--whatsapp nav__extra" href="https://wa.me/351932639201" data-whatsapp="central" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg> WhatsApp da Central</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- ===================== CABEÇALHO DA PÁGINA ===================== -->
+    <section class="page-hero bg-turbo" aria-labelledby="titulo-pagina">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Localização">
+          <ol>
+            <li><a href="index.html">Início</a></li>
+            <li aria-current="page">Explicadores</li>
+          </ol>
+        </nav>
+        <h1 class="page-hero__title" id="titulo-pagina">Os nossos melhores explicadores</h1>
+        <p class="page-hero__text">Profissionais focados em ajudar-te a atingir o teu máximo potencial.</p>
+      </div>
+    </section>
+
+    <!-- ===================== PERFIS ===================== -->
+    <section class="section section--suave" aria-label="Perfis dos explicadores">
+      <div class="container">
+        <!-- Os dados de cada explicador (nome, telefone, matérias, qualidades, biografia e avaliação)
+             são preenchidos automaticamente a partir do CONFIG, no início de js/script.js.
+             As fotografias são images/explicador1.jpg, explicador2.jpg e explicador3.jpg. -->
+        <div class="profile-list">
+          <!-- EXPLICADOR 1 -->
+          <article class="profile" id="explicador-1" data-explicador="1" aria-labelledby="nome-explicador-1" data-reveal>
+            <div class="profile__media">
+              <img src="images/explicador1.jpg" alt="Fotografia de [NOME DO EXPLICADOR 1]" width="800" height="1000" loading="lazy" data-campo="foto">
+            </div>
+            <div class="profile__body">
+              <div class="profile__head">
+                <h2 class="profile__name" id="nome-explicador-1" data-campo="nome">[NOME DO EXPLICADOR 1]</h2>
+                <span class="rating"><span class="stars" style="--avaliacao: 5" data-campo="avaliacao" role="img" aria-label="Avaliação: 5,0 em 5"></span><span data-campo="avaliacao-texto" aria-hidden="true">5,0</span></span>
+              </div>
+              <p class="profile__bio" data-campo="biografia">Explica com calma e sem pressas, até a matéria fazer sentido. Prepara cada aula com objetivos claros e acompanha de perto a evolução do aluno, sempre com os resultados em vista.</p>
+              <dl class="profile__meta">
+                <div>
+                  <dt>Matérias</dt>
+                  <dd data-campo="materias">[MATÉRIAS]</dd>
+                </div>
+                <div>
+                  <dt>Telefone</dt>
+                  <dd data-campo="telefone">[NÚMERO DO EXPLICADOR 1]</dd>
+                </div>
+              </dl>
+              <div class="profile__qualities">
+                <h3>Qualidades</h3>
+                <ul class="quality-list" data-campo="qualidades">
+                  <li>Paciente</li>
+                  <li>Comunicativo</li>
+                  <li>Organizado</li>
+                  <li>Focado nos resultados</li>
+                </ul>
+              </div>
+              <div class="profile__actions">
+                <a class="btn btn--whatsapp" href="https://wa.me/351932639201" data-campo="whatsapp" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg> Contactar pelo WhatsApp</a>
+              </div>
+            </div>
+          </article>
+          <!-- EXPLICADOR 2 -->
+          <article class="profile" id="explicador-2" data-explicador="2" aria-labelledby="nome-explicador-2" data-reveal>
+            <div class="profile__media">
+              <img src="images/explicador2.jpg" alt="Fotografia de [NOME DO EXPLICADOR 2]" width="800" height="1000" loading="lazy" data-campo="foto">
+            </div>
+            <div class="profile__body">
+              <div class="profile__head">
+                <h2 class="profile__name" id="nome-explicador-2" data-campo="nome">[NOME DO EXPLICADOR 2]</h2>
+                <span class="rating"><span class="stars" style="--avaliacao: 5" data-campo="avaliacao" role="img" aria-label="Avaliação: 5,0 em 5"></span><span data-campo="avaliacao-texto" aria-hidden="true">5,0</span></span>
+              </div>
+              <p class="profile__bio" data-campo="biografia">Aulas dinâmicas e cheias de energia, que tornam a matéria mais fácil de perceber. A experiência e a forma clara de comunicar ajudam cada aluno a ganhar motivação e confiança.</p>
+              <dl class="profile__meta">
+                <div>
+                  <dt>Matérias</dt>
+                  <dd data-campo="materias">[MATÉRIAS]</dd>
+                </div>
+                <div>
+                  <dt>Telefone</dt>
+                  <dd data-campo="telefone">[NÚMERO DO EXPLICADOR 2]</dd>
+                </div>
+              </dl>
+              <div class="profile__qualities">
+                <h3>Qualidades</h3>
+                <ul class="quality-list" data-campo="qualidades">
+                  <li>Dinâmico</li>
+                  <li>Motivador</li>
+                  <li>Boa capacidade de comunicação</li>
+                  <li>Experiente</li>
+                </ul>
+              </div>
+              <div class="profile__actions">
+                <a class="btn btn--whatsapp" href="https://wa.me/351932639201" data-campo="whatsapp" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg> Contactar pelo WhatsApp</a>
+              </div>
+            </div>
+          </article>
+          <!-- EXPLICADOR 3 -->
+          <article class="profile" id="explicador-3" data-explicador="3" aria-labelledby="nome-explicador-3" data-reveal>
+            <div class="profile__media">
+              <img src="images/explicador3.jpg" alt="Fotografia de [NOME DO EXPLICADOR 3]" width="800" height="1000" loading="lazy" data-campo="foto">
+            </div>
+            <div class="profile__body">
+              <div class="profile__head">
+                <h2 class="profile__name" id="nome-explicador-3" data-campo="nome">[NOME DO EXPLICADOR 3]</h2>
+                <span class="rating"><span class="stars" style="--avaliacao: 5" data-campo="avaliacao" role="img" aria-label="Avaliação: 5,0 em 5"></span><span data-campo="avaliacao-texto" aria-hidden="true">5,0</span></span>
+              </div>
+              <p class="profile__bio" data-campo="biografia">Junta experiência e organização num plano de estudo bem definido. Motiva o aluno a dar o melhor em cada sessão e mantém o foco no objetivo: melhorar a nota.</p>
+              <dl class="profile__meta">
+                <div>
+                  <dt>Matérias</dt>
+                  <dd data-campo="materias">[MATÉRIAS]</dd>
+                </div>
+                <div>
+                  <dt>Telefone</dt>
+                  <dd data-campo="telefone">[NÚMERO DO EXPLICADOR 3]</dd>
+                </div>
+              </dl>
+              <div class="profile__qualities">
+                <h3>Qualidades</h3>
+                <ul class="quality-list" data-campo="qualidades">
+                  <li>Experiente</li>
+                  <li>Organizado</li>
+                  <li>Motivador</li>
+                  <li>Orientado para resultados</li>
+                </ul>
+              </div>
+              <div class="profile__actions">
+                <a class="btn btn--whatsapp" href="https://wa.me/351932639201" data-campo="whatsapp" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg> Contactar pelo WhatsApp</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CHAMADA PARA A AÇÃO ===================== -->
+    <section class="section" aria-labelledby="titulo-cta">
+      <div class="container">
+        <div class="cta-panel bg-turbo" data-reveal>
+          <div>
+            <h2 id="titulo-cta">Queres fazer parte da equipa?</h2>
+            <p>Se gostas de ensinar e queres ser valorizado pelos resultados dos teus alunos, conhece o Plano Explicador.</p>
+          </div>
+          <div class="cta-panel__actions">
+            <a class="btn btn--gold btn--lg" href="plano-explicador.html">Conhecer o Plano Explicador</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <!-- Logo para fundo escuro: images/logo-branco.png -->
+          <img src="images/logo-branco.png" alt="TURBO DISEL" width="168" height="38">
+          <p>Explicações personalizadas em Matemática, Economia e Inglês para alunos do secundário e da faculdade.</p>
+          <p class="footer__slogan">Potencia o teu conhecimento. Acelera os teus resultados.</p>
+        </div>
+
+        <nav aria-label="Páginas do site">
+          <h2 class="footer__title">Navegação</h2>
+          <ul class="footer__links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="materias.html">Matérias</a></li>
+            <li><a href="explicadores.html">Explicadores</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="footer__title">Planos</h2>
+          <ul class="footer__links">
+            <li><a href="plano-estudante.html">Plano Estudante</a></li>
+            <li><a href="plano-estudante.html#plano-nota">Plano por Nota</a></li>
+            <li><a href="plano-explicador.html">Plano Explicador</a></li>
+            <li><a href="plano-explicador.html#beneficios">Torna-te explicador</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__contact">
+          <h2 class="footer__title">Central TURBO DISEL</h2>
+          <a class="footer__phone" href="https://wa.me/351932639201" data-whatsapp="central" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg> <span data-central-telefone>932 639 201</span></a>
+          <dl class="footer__hours">
+            <div><dt>Segunda a sexta</dt><dd data-horario="semana">09:00 — 20:00</dd></div>
+            <div><dt>Sábado</dt><dd data-horario="sabado">10:00 — 18:00</dd></div>
+            <div><dt>Domingo</dt><dd data-horario="domingo">Encerrado</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span data-ano>2026</span> TURBO DISEL. Todos os direitos reservados.</p>
+        <a href="https://www.livroreclamacoes.pt/" target="_blank" rel="noopener">Livro de Reclamações</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante do WhatsApp (central) -->
+  <a class="whatsapp-fab" href="https://wa.me/351932639201" data-whatsapp="central" target="_blank" rel="noopener" aria-label="Falar com a Central TURBO DISEL no WhatsApp"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg></a>
+</body>
+</html>

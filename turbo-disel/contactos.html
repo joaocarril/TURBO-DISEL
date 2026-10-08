@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TURBO DISEL | Contactos</title>
+  <meta name="description" content="Contacta a TURBO DISEL pelo WhatsApp 932 639 201 ou envia-nos uma mensagem. Fala com a central ou diretamente com os explicadores.">
+  <meta name="theme-color" content="#0A1733">
+
+  <!-- Pré-visualização quando o link é partilhado (WhatsApp, redes sociais) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TURBO DISEL">
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:title" content="TURBO DISEL | Contactos">
+  <meta property="og:description" content="Contacta a TURBO DISEL pelo WhatsApp 932 639 201 ou envia-nos uma mensagem. Fala com a central ou diretamente com os explicadores.">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+
+  <!-- Tipos de letra: Poppins (títulos) e Inter (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@500;600;700;800&amp;display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+  <!-- ===================== CABEÇALHO ===================== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <!-- Logo: para alterar, substitui o ficheiro images/logo.png -->
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="TURBO DISEL — página inicial" width="177" height="40">
+      </a>
+
+      <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="nav" id="menu-principal" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Início</a></li>
+          <li><a class="nav__link" href="materias.html">Matérias</a></li>
+          <li><a class="nav__link" href="explicadores.html">Explicadores</a></li>
+          <li><a class="nav__link" href="plano-estudante.html">Plano Estudante</a></li>
+          <li><a class="nav__link" href="plano-explicador.html">Plano Explicador</a></li>
+          <li><a class="nav__link" href="sobre.html">Sobre Nós</a></li>
+          <li><a class="nav__link" href="contactos.html" aria-current="page">Contactos</a></li>
+        </ul>
+        <a class="btn btn--primary nav__cta" href="contactos.html">Contactar agora</a>
+        <a class="btn btn--whatsapp nav__extra" href="https://wa.me/351932639201" data-whatsapp="central" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg> WhatsApp da Central</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- ===================== CABEÇALHO DA PÁGINA ===================== -->
+    <section class="page-hero bg-turbo" aria-labelledby="titulo-pagina">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Localização">
+          <ol>
+            <li><a href="index.html">Início</a></li>
+            <li aria-current="page">Contactos</li>
+          </ol>
+        </nav>
+        <h1 class="page-hero__title" id="titulo-pagina">Contacta a Turbo Disel</h1>
+        <p class="page-hero__text">Estamos disponíveis para esclarecer as tuas dúvidas e ajudar-te a encontrar a melhor solução.</p>
+      </div>
+    </section>
+
+    <!-- ===================== CENTRAL, HORÁRIO E FORMULÁRIO ===================== -->
+    <section class="section" aria-label="Contactos e formulário">
+      <div class="container contact-layout">
+        <aside class="contact-aside" aria-label="Contactos diretos">
+          <!-- Número da central: CONFIG.central em js/script.js -->
+          <div class="central-card bg-turbo" data-reveal>
+            <h2>Central TURBO DISEL</h2>
+            <span class="central-card__label">WhatsApp</span>
+            <a class="central-card__number" href="https://wa.me/351932639201" data-whatsapp="central" target="_blank" rel="noopener" data-central-telefone>932 639 201</a>
+            <a class="btn btn--whatsapp btn--lg btn--block" href="https://wa.me/351932639201" data-whatsapp="central" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg> Falar com a Central</a>
+          </div>
+
+          <div class="hours-card" data-reveal>
+            <div class="hours-card__head">
+              <h2>Horário</h2>
+              <span class="hours-status" data-estado-horario hidden></span>
+            </div>
+            <dl class="hours-list">
+              <div data-dia="semana"><dt>Segunda a sexta</dt><dd data-horario="semana">09:00 — 20:00</dd></div>
+              <div data-dia="sabado"><dt>Sábado</dt><dd data-horario="sabado">10:00 — 18:00</dd></div>
+              <div data-dia="domingo"><dt>Domingo</dt><dd data-horario="domingo">Encerrado</dd></div>
+            </dl>
+          </div>
+        </aside>
+
+        <div class="form-card" id="formulario" data-reveal>
+          <h2>Envia-nos uma mensagem</h2>
+          <p class="form-card__intro">Preenche o formulário e preparamos a tua mensagem para a enviares à nossa central pelo WhatsApp.</p>
+
+          <form class="form" data-formulario novalidate>
+            <p class="form__status" data-formulario-estado role="alert" hidden><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5h.01"/></svg><span></span></p>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="nome">Nome <span>(obrigatório)</span></label>
+                <input class="form__control" id="nome" name="nome" type="text" autocomplete="name" required aria-describedby="erro-nome">
+                <p class="form__error" id="erro-nome"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5h.01"/></svg><span data-erro></span></p>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="email">Email <span>(obrigatório)</span></label>
+                <input class="form__control" id="email" name="email" type="email" autocomplete="email" required aria-describedby="erro-email" placeholder="nome@exemplo.pt">
+                <p class="form__error" id="erro-email"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5h.01"/></svg><span data-erro></span></p>
+              </div>
+            </div>
+
+              <div class="form__group">
+                <label class="form__label" for="telefone">Telefone <span>(obrigatório)</span></label>
+                <input class="form__control" id="telefone" name="telefone" type="tel" autocomplete="tel" required aria-describedby="erro-telefone" placeholder="912 345 678">
+                <p class="form__error" id="erro-telefone"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5h.01"/></svg><span data-erro></span></p>
+              </div>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="nivel">Nível de ensino</label>
+                <select class="form__control" id="nivel" name="nivel">
+                  <option value="">Seleciona</option>
+                  <option value="secundario">Secundário</option>
+                  <option value="faculdade">Faculdade</option>
+                </select>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="materia">Matéria</label>
+                <select class="form__control" id="materia" name="materia">
+                  <option value="">Seleciona</option>
+                  <option value="matematica">Matemática</option>
+                  <option value="economia">Economia</option>
+                  <option value="ingles">Inglês</option>
+                </select>
+              </div>
+            </div>
+
+              <div class="form__group">
+                <label class="form__label" for="tipo">Tipo de aula</label>
+                <select class="form__control" id="tipo" name="tipo">
+                  <option value="">Seleciona</option>
+                  <option value="secundario-grupo">Secundário — Grupo</option>
+                  <option value="secundario-individual">Secundário — Individual</option>
+                  <option value="faculdade-grupo">Faculdade — Grupo</option>
+                  <option value="faculdade-individual">Faculdade — Individual</option>
+                  <option value="plano-nota">Plano por Nota</option>
+                </select>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="mensagem">Mensagem <span>(obrigatório)</span></label>
+                <textarea class="form__control" id="mensagem" name="mensagem" rows="5" required aria-describedby="erro-mensagem" placeholder="Conta-nos o que precisas: ano, matéria, dificuldades e disponibilidade."></textarea>
+                <p class="form__error" id="erro-mensagem"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5h.01"/></svg><span data-erro></span></p>
+              </div>
+
+            <div class="form__footer">
+              <p class="form__note">Os teus dados servem apenas para responder ao teu pedido.</p>
+              <button class="btn btn--primary btn--lg" type="submit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 3L10 14"/><path d="M21 3l-7 18-4-7-7-4z"/></svg><span>Enviar mensagem</span></button>
+            </div>
+          </form>
+
+          <!-- Mostrado depois de o formulário ser preenchido corretamente -->
+          <div class="form-success" data-formulario-sucesso hidden>
+            <div class="form-success__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg></div>
+            <h2 tabindex="-1">Mensagem preparada com sucesso!</h2>
+            <p>Falta só um passo: envia-a para a nossa central pelo WhatsApp. A mensagem já vai escrita com os teus dados.</p>
+            <pre class="form-success__preview" data-formulario-previa></pre>
+            <div class="form-success__actions">
+              <a class="btn btn--whatsapp btn--lg" href="https://wa.me/351932639201" target="_blank" rel="noopener" data-formulario-whatsapp><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg> Enviar pelo WhatsApp</a>
+              <button class="btn btn--outline btn--lg" type="button" data-formulario-novo>Escrever outra mensagem</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTOS DOS EXPLICADORES ===================== -->
+    <!-- Nomes e números: CONFIG.explicadores em js/script.js -->
+    <section class="section section--suave" aria-labelledby="titulo-contactos-explicadores">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <h2 id="titulo-contactos-explicadores">Contactos dos explicadores</h2>
+          <p>Já sabes com quem queres ter aulas? Fala diretamente com o teu explicador.</p>
+        </div>
+        <ul class="tutor-contacts" data-reveal-grupo>
+          <li class="tutor-contact" data-explicador="1">
+            <div class="tutor-contact__head">
+              <img src="images/explicador1.jpg" alt="Fotografia de [NOME DO EXPLICADOR 1]" width="800" height="1000" loading="lazy" data-campo="foto">
+              <div>
+                <span class="tutor-contact__label">Explicador 1</span>
+                <h3 data-campo="nome">[NOME DO EXPLICADOR 1]</h3>
+              </div>
+            </div>
+            <p class="tutor-contact__phone"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5h2.7l1.5 4.2-2.1 1.3a11.6 11.6 0 0 0 6.3 6.3l1.3-2.1 4.2 1.5v2.7a2 2 0 0 1-2.2 2A17 17 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/></svg><span data-campo="telefone">[NÚMERO DO EXPLICADOR 1]</span></p>
+            <a class="btn btn--whatsapp btn--block" href="https://wa.me/351932639201" data-campo="whatsapp" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg> WhatsApp<span class="sr-only"> de <span data-campo="nome">[NOME DO EXPLICADOR 1]</span></span></a>
+          </li>
+          <li class="tutor-contact" data-explicador="2">
+            <div class="tutor-contact__head">
+              <img src="images/explicador2.jpg" alt="Fotografia de [NOME DO EXPLICADOR 2]" width="800" height="1000" loading="lazy" data-campo="foto">
+              <div>
+                <span class="tutor-contact__label">Explicador 2</span>
+                <h3 data-campo="nome">[NOME DO EXPLICADOR 2]</h3>
+              </div>
+            </div>
+            <p class="tutor-contact__phone"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5h2.7l1.5 4.2-2.1 1.3a11.6 11.6 0 0 0 6.3 6.3l1.3-2.1 4.2 1.5v2.7a2 2 0 0 1-2.2 2A17 17 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/></svg><span data-campo="telefone">[NÚMERO DO EXPLICADOR 2]</span></p>
+            <a class="btn btn--whatsapp btn--block" href="https://wa.me/351932639201" data-campo="whatsapp" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg> WhatsApp<span class="sr-only"> de <span data-campo="nome">[NOME DO EXPLICADOR 2]</span></span></a>
+          </li>
+          <li class="tutor-contact" data-explicador="3">
+            <div class="tutor-contact__head">
+              <img src="images/explicador3.jpg" alt="Fotografia de [NOME DO EXPLICADOR 3]" width="800" height="1000" loading="lazy" data-campo="foto">
+              <div>
+                <span class="tutor-contact__label">Explicador 3</span>
+                <h3 data-campo="nome">[NOME DO EXPLICADOR 3]</h3>
+              </div>
+            </div>
+            <p class="tutor-contact__phone"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5h2.7l1.5 4.2-2.1 1.3a11.6 11.6 0 0 0 6.3 6.3l1.3-2.1 4.2 1.5v2.7a2 2 0 0 1-2.2 2A17 17 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/></svg><span data-campo="telefone">[NÚMERO DO EXPLICADOR 3]</span></p>
+            <a class="btn btn--whatsapp btn--block" href="https://wa.me/351932639201" data-campo="whatsapp" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg> WhatsApp<span class="sr-only"> de <span data-campo="nome">[NOME DO EXPLICADOR 3]</span></span></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <!-- Logo para fundo escuro: images/logo-branco.png -->
+          <img src="images/logo-branco.png" alt="TURBO DISEL" width="168" height="38">
+          <p>Explicações personalizadas em Matemática, Economia e Inglês para alunos do secundário e da faculdade.</p>
+          <p class="footer__slogan">Potencia o teu conhecimento. Acelera os teus resultados.</p>
+        </div>
+
+        <nav aria-label="Páginas do site">
+          <h2 class="footer__title">Navegação</h2>
+          <ul class="footer__links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="materias.html">Matérias</a></li>
+            <li><a href="explicadores.html">Explicadores</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="footer__title">Planos</h2>
+          <ul class="footer__links">
+            <li><a href="plano-estudante.html">Plano Estudante</a></li>
+            <li><a href="plano-estudante.html#plano-nota">Plano por Nota</a></li>
+            <li><a href="plano-explicador.html">Plano Explicador</a></li>
+            <li><a href="plano-explicador.html#beneficios">Torna-te explicador</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__contact">
+          <h2 class="footer__title">Central TURBO DISEL</h2>
+          <a class="footer__phone" href="https://wa.me/351932639201" data-whatsapp="central" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg> <span data-central-telefone>932 639 201</span></a>
+          <dl class="footer__hours">
+            <div><dt>Segunda a sexta</dt><dd data-horario="semana">09:00 — 20:00</dd></div>
+            <div><dt>Sábado</dt><dd data-horario="sabado">10:00 — 18:00</dd></div>
+            <div><dt>Domingo</dt><dd data-horario="domingo">Encerrado</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span data-ano>2026</span> TURBO DISEL. Todos os direitos reservados.</p>
+        <a href="https://www.livroreclamacoes.pt/" target="_blank" rel="noopener">Livro de Reclamações</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante do WhatsApp (central) -->
+  <a class="whatsapp-fab" href="https://wa.me/351932639201" data-whatsapp="central" target="_blank" rel="noopener" aria-label="Falar com a Central TURBO DISEL no WhatsApp"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg></a>
+</body>
+</html>

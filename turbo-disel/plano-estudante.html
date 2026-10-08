@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TURBO DISEL | Planos para Estudantes</title>
+  <meta name="description" content="Preços das explicações por hora para o secundário e a faculdade, em grupo ou individuais, e o Plano por Nota de Exame Nacional, com simulador do valor por hora.">
+  <meta name="theme-color" content="#0A1733">
+
+  <!-- Pré-visualização quando o link é partilhado (WhatsApp, redes sociais) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TURBO DISEL">
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:title" content="TURBO DISEL | Planos para Estudantes">
+  <meta property="og:description" content="Preços das explicações por hora para o secundário e a faculdade, em grupo ou individuais, e o Plano por Nota de Exame Nacional, com simulador do valor por hora.">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+
+  <!-- Tipos de letra: Poppins (títulos) e Inter (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@500;600;700;800&amp;display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+  <!-- ===================== CABEÇALHO ===================== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <!-- Logo: para alterar, substitui o ficheiro images/logo.png -->
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="TURBO DISEL — página inicial" width="177" height="40">
+      </a>
+
+      <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="nav" id="menu-principal" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Início</a></li>
+          <li><a class="nav__link" href="materias.html">Matérias</a></li>
+          <li><a class="nav__link" href="explicadores.html">Explicadores</a></li>
+          <li><a class="nav__link" href="plano-estudante.html" aria-current="page">Plano Estudante</a></li>
+          <li><a class="nav__link" href="plano-explicador.html">Plano Explicador</a></li>
+          <li><a class="nav__link" href="sobre.html">Sobre Nós</a></li>
+          <li><a class="nav__link" href="contactos.html">Contactos</a></li>
+        </ul>
+        <a class="btn btn--primary nav__cta" href="contactos.html">Contactar agora</a>
+        <a class="btn btn--whatsapp nav__extra" href="https://wa.me/351932639201" data-whatsapp="central" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg> WhatsApp da Central</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- ===================== CABEÇALHO DA PÁGINA ===================== -->
+    <section class="page-hero bg-turbo" aria-labelledby="titulo-pagina">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Localização">
+          <ol>
+            <li><a href="index.html">Início</a></li>
+            <li aria-current="page">Plano Estudante</li>
+          </ol>
+        </nav>
+        <h1 class="page-hero__title" id="titulo-pagina">Planos para Estudantes</h1>
+        <p class="page-hero__text">Escolhe a modalidade que melhor se adapta às tuas necessidades.</p>
+        <ul class="page-hero__links">
+          <li><a class="pill-link" href="#plano-hora"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg> Plano por Hora</a></li>
+          <li><a class="pill-link" href="#plano-nota"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2.5L5 13.5h6l-1 8 8-11h-6z"/></svg> Plano por Nota</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== PLANO POR HORA ===================== -->
+    <!-- Preços: preenchidos a partir de CONFIG.precosEstudante em js/script.js -->
+    <section class="section" id="plano-hora" aria-labelledby="titulo-plano-hora">
+      <div class="container">
+        <div class="hour-plan">
+          <div>
+            <div class="section-head" data-reveal>
+              <h2 id="titulo-plano-hora">Plano por Hora</h2>
+              <p>Os preços por hora dependem do nível de ensino e do formato da aula.</p>
+            </div>
+            <div class="hour-plan__note" data-reveal>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+              <p><strong>Grupo ou individual?</strong> Nas aulas em grupo partilhas a explicação com outros alunos e pagas menos por hora. Nas aulas individuais, o explicador acompanha-te só a ti, ao teu ritmo.</p>
+            </div>
+          </div>
+          <div class="table-wrap" data-reveal>
+            <table class="price-table">
+              <caption class="sr-only">Preços por hora para estudantes</caption>
+              <thead>
+                <tr><th scope="col">Nível</th><th scope="col">Modalidade</th><th scope="col">Preço</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><span class="nivel-tag">Secundário</span></td><td>Grupo</td><td class="preco"><span data-preco="secundarioGrupo">10</span> €/hora</td></tr>
+                <tr><td><span class="nivel-tag">Secundário</span></td><td>Individual</td><td class="preco"><span data-preco="secundarioIndividual">20</span> €/hora</td></tr>
+                <tr><td><span class="nivel-tag nivel-tag--faculdade">Faculdade</span></td><td>Grupo</td><td class="preco"><span data-preco="faculdadeGrupo">15</span> €/hora</td></tr>
+                <tr><td><span class="nivel-tag nivel-tag--faculdade">Faculdade</span></td><td>Individual</td><td class="preco"><span data-preco="faculdadeIndividual">25</span> €/hora</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="pricing-grid" data-reveal-grupo>
+          <article class="price-card">
+            <h3 class="price-card__title"><span class="chip">Secundário</span><span>Grupo</span></h3>
+            <p class="price-card__price"><strong><span data-preco="secundarioGrupo">10</span> €</strong><span>/hora</span></p>
+            <ul class="check-list check-list--sm">
+              <li>Aulas em grupo com outros alunos</li>
+              <li>Partilha de dúvidas e estratégias</li>
+              <li>Ideal para estudar em conjunto</li>
+            </ul>
+            <a class="btn btn--outline btn--block" href="contactos.html?tipo=secundario-grupo#formulario">Escolher este plano<span class="sr-only"> (Secundário — Grupo)</span></a>
+          </article>
+          <article class="price-card">
+            <h3 class="price-card__title"><span class="chip">Secundário</span><span>Individual</span></h3>
+            <p class="price-card__price"><strong><span data-preco="secundarioIndividual">20</span> €</strong><span>/hora</span></p>
+            <ul class="check-list check-list--sm">
+              <li>Atenção exclusiva do explicador</li>
+              <li>Plano de estudo à tua medida</li>
+              <li>Ritmo ajustado às tuas dificuldades</li>
+            </ul>
+            <a class="btn btn--outline btn--block" href="contactos.html?tipo=secundario-individual#formulario">Escolher este plano<span class="sr-only"> (Secundário — Individual)</span></a>
+          </article>
+          <article class="price-card price-card--faculdade">
+            <h3 class="price-card__title"><span class="chip chip--dourado">Faculdade</span><span>Grupo</span></h3>
+            <p class="price-card__price"><strong><span data-preco="faculdadeGrupo">15</span> €</strong><span>/hora</span></p>
+            <ul class="check-list check-list--sm">
+              <li>Estudo em grupo para cadeiras da faculdade</li>
+              <li>Preparação para frequências e exames</li>
+              <li>Ideal para estudar com colegas</li>
+            </ul>
+            <a class="btn btn--outline btn--block" href="contactos.html?tipo=faculdade-grupo#formulario">Escolher este plano<span class="sr-only"> (Faculdade — Grupo)</span></a>
+          </article>
+          <article class="price-card price-card--faculdade">
+            <h3 class="price-card__title"><span class="chip chip--dourado">Faculdade</span><span>Individual</span></h3>
+            <p class="price-card__price"><strong><span data-preco="faculdadeIndividual">25</span> €</strong><span>/hora</span></p>
+            <ul class="check-list check-list--sm">
+              <li>Acompanhamento exclusivo</li>
+              <li>Foco nas cadeiras em que mais precisas</li>
+              <li>Horários ajustados à tua rotina</li>
+            </ul>
+            <a class="btn btn--outline btn--block" href="contactos.html?tipo=faculdade-individual#formulario">Escolher este plano<span class="sr-only"> (Faculdade — Individual)</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PLANO POR NOTA ===================== -->
+    <!-- Regra: valor por hora = nota do exame (0 a 20), com mínimo de 5 €/hora -> Math.max(nota, 5) -->
+    <section class="section bg-turbo grade-plan" id="plano-nota" aria-labelledby="titulo-plano-nota">
+      <div class="container">
+        <div class="grade-plan__grid">
+          <div class="grade-plan__info">
+            <div class="section-head" data-reveal>
+              <h2 id="titulo-plano-nota">Plano por Nota de Exame Nacional</h2>
+              <p>Neste modelo, o valor por hora das explicações é determinado pela nota obtida pelo aluno no exame nacional.</p>
+            </div>
+
+            <div class="rule-card" data-reveal>
+              <div class="rule-row">
+                <span class="rule-row__tag">Nota de <span data-valor-minimo>5</span> a 20</span>
+                <p><strong>Valor por hora = nota obtida no exame nacional</strong>Exemplo: nota 18 → 18 €/hora.</p>
+              </div>
+              <div class="rule-row rule-row--min">
+                <span class="rule-row__tag">Nota abaixo de <span data-valor-minimo>5</span></span>
+                <p><strong>Aplica-se o valor mínimo de <span data-valor-minimo>5</span> €/hora</strong>Exemplo: nota 2 → <span data-valor-minimo>5</span> €/hora.</p>
+              </div>
+            </div>
+
+            <div class="examples" data-reveal>
+              <h3>Exemplos</h3>
+              <p>A nota conta na escala de 0 a 20 valores. Escolhe um exemplo para o veres no simulador.</p>
+              <div class="examples__grid">
+                <button class="example" type="button" data-exemplo="20" data-alvo="simulador-estudante"><span class="example__nota">Nota 20</span><span class="example__valor">20 €</span></button>
+                <button class="example" type="button" data-exemplo="18" data-alvo="simulador-estudante"><span class="example__nota">Nota 18</span><span class="example__valor">18 €</span></button>
+                <button class="example" type="button" data-exemplo="15" data-alvo="simulador-estudante"><span class="example__nota">Nota 15</span><span class="example__valor">15 €</span></button>
+                <button class="example" type="button" data-exemplo="10" data-alvo="simulador-estudante"><span class="example__nota">Nota 10</span><span class="example__valor">10 €</span></button>
+                <button class="example" type="button" data-exemplo="6" data-alvo="simulador-estudante"><span class="example__nota">Nota 6</span><span class="example__valor">6 €</span></button>
+                <button class="example" type="button" data-exemplo="5" data-alvo="simulador-estudante"><span class="example__nota">Nota 5</span><span class="example__valor">5 €</span></button>
+                <button class="example example--min" type="button" data-exemplo="4" data-alvo="simulador-estudante"><span class="example__nota">Nota 4</span><span class="example__valor">5 €</span></button>
+                <button class="example example--min" type="button" data-exemplo="3" data-alvo="simulador-estudante"><span class="example__nota">Nota 3</span><span class="example__valor">5 €</span></button>
+                <button class="example example--min" type="button" data-exemplo="2" data-alvo="simulador-estudante"><span class="example__nota">Nota 2</span><span class="example__valor">5 €</span></button>
+                <button class="example example--min" type="button" data-exemplo="1" data-alvo="simulador-estudante"><span class="example__nota">Nota 1</span><span class="example__valor">5 €</span></button>
+                <button class="example example--min" type="button" data-exemplo="0" data-alvo="simulador-estudante"><span class="example__nota">Nota 0</span><span class="example__valor">5 €</span></button>
+              </div>
+            </div>
+          </div>
+
+          <form class="calc" id="simulador-estudante" data-calculadora data-rotulo="Valor da explicação:" data-unidade="€/hora" novalidate data-reveal>
+            <h3 class="calc__title">Simulador do Plano por Nota</h3>
+            <p class="calc__subtitle">Escreve a nota ou arrasta o seletor.</p>
+            <label class="calc__label" for="nota-estudante">Qual foi a nota do exame nacional?</label>
+            <div class="calc__field">
+              <div class="calc__input-wrap">
+                <input class="calc__input" id="nota-estudante" name="nota" type="text" inputmode="decimal" autocomplete="off" maxlength="5" placeholder="0 a 20" aria-describedby="nota-estudante-ajuda nota-estudante-erro" data-calc-input>
+                <span class="calc__suffix" aria-hidden="true">/ 20</span>
+              </div>
+              <input class="calc__range" type="range" min="0" max="20" step="1" value="0" aria-label="Seletor da nota do exame, de 0 a 20" data-calc-range>
+            </div>
+            <p class="calc__hint" id="nota-estudante-ajuda">Notas de 0 a 20 valores (não é uma percentagem). Podes usar casas decimais, por exemplo 14,5.</p>
+            <p class="calc__error" id="nota-estudante-erro" role="alert" data-calc-erro hidden></p>
+            <div class="calc__gauge" data-gauge="escuro"></div>
+            <ul class="gauge-legend" aria-hidden="true">
+              <li><span class="gauge-legend__swatch gauge-legend__swatch--min"></span><span>Nota abaixo de <span data-valor-minimo>5</span>: valor mínimo</span></li>
+              <li><span class="gauge-legend__swatch"></span><span>Nota de <span data-valor-minimo>5</span> a 20: valor = nota</span></li>
+            </ul>
+            <p class="calc__result" data-calc-resultado aria-live="polite">Insere uma nota entre 0 e 20 para veres o valor.</p>
+            <noscript><p>Ativa o JavaScript no teu browser para usar o simulador.</p></noscript>
+            <a class="btn btn--gold btn--block calc__cta" href="contactos.html?tipo=plano-nota#formulario">Quero o Plano por Nota</a>
+          </form>
+        </div>
+
+        <ol class="mini-steps" data-reveal-grupo>
+          <li>
+            <h3>Escolhe o Plano por Nota</h3>
+            <p>Indica-o quando nos contactares ou no formulário de contacto.</p>
+          </li>
+          <li>
+            <h3>Prepara o exame com o teu explicador</h3>
+            <p>Aulas focadas nos conteúdos e no tipo de perguntas do exame nacional.</p>
+          </li>
+          <li>
+            <h3>A tua nota define o valor da hora</h3>
+            <p>Cada hora vale a nota que tiraste no exame, com um mínimo de <span data-valor-minimo>5</span> €.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== CHAMADA PARA A AÇÃO ===================== -->
+    <section class="section" aria-labelledby="titulo-cta">
+      <div class="container">
+        <div class="cta-panel bg-turbo" data-reveal>
+          <div>
+            <h2 id="titulo-cta">Ainda tens dúvidas sobre qual plano escolher?</h2>
+            <p>Fala com a nossa central: explicamos-te as diferenças e ajudamos-te a escolher a opção certa.</p>
+          </div>
+          <div class="cta-panel__actions">
+            <a class="btn btn--whatsapp btn--lg" href="https://wa.me/351932639201" data-whatsapp="central" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg> Falar com a Central</a>
+            <a class="btn btn--ghost btn--lg" href="contactos.html">Enviar mensagem</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <!-- Logo para fundo escuro: images/logo-branco.png -->
+          <img src="images/logo-branco.png" alt="TURBO DISEL" width="168" height="38">
+          <p>Explicações personalizadas em Matemática, Economia e Inglês para alunos do secundário e da faculdade.</p>
+          <p class="footer__slogan">Potencia o teu conhecimento. Acelera os teus resultados.</p>
+        </div>
+
+        <nav aria-label="Páginas do site">
+          <h2 class="footer__title">Navegação</h2>
+          <ul class="footer__links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="materias.html">Matérias</a></li>
+            <li><a href="explicadores.html">Explicadores</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="footer__title">Planos</h2>
+          <ul class="footer__links">
+            <li><a href="plano-estudante.html">Plano Estudante</a></li>
+            <li><a href="plano-estudante.html#plano-nota">Plano por Nota</a></li>
+            <li><a href="plano-explicador.html">Plano Explicador</a></li>
+            <li><a href="plano-explicador.html#beneficios">Torna-te explicador</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__contact">
+          <h2 class="footer__title">Central TURBO DISEL</h2>
+          <a class="footer__phone" href="https://wa.me/351932639201" data-whatsapp="central" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg> <span data-central-telefone>932 639 201</span></a>
+          <dl class="footer__hours">
+            <div><dt>Segunda a sexta</dt><dd data-horario="semana">09:00 — 20:00</dd></div>
+            <div><dt>Sábado</dt><dd data-horario="sabado">10:00 — 18:00</dd></div>
+            <div><dt>Domingo</dt><dd data-horario="domingo">Encerrado</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span data-ano>2026</span> TURBO DISEL. Todos os direitos reservados.</p>
+        <a href="https://www.livroreclamacoes.pt/" target="_blank" rel="noopener">Livro de Reclamações</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante do WhatsApp (central) -->
+  <a class="whatsapp-fab" href="https://wa.me/351932639201" data-whatsapp="central" target="_blank" rel="noopener" aria-label="Falar com a Central TURBO DISEL no WhatsApp"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg></a>
+</body>
+</html>

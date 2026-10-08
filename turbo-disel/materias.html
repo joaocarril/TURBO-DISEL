@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TURBO DISEL | Matérias: Matemática, Economia e Inglês</title>
+  <meta name="description" content="Explicações de Matemática, Economia e Inglês para o ensino secundário e universitário. Conhece a descrição, o público-alvo e os benefícios de cada matéria.">
+  <meta name="theme-color" content="#0A1733">
+
+  <!-- Pré-visualização quando o link é partilhado (WhatsApp, redes sociais) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TURBO DISEL">
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:title" content="TURBO DISEL | Matérias: Matemática, Economia e Inglês">
+  <meta property="og:description" content="Explicações de Matemática, Economia e Inglês para o ensino secundário e universitário. Conhece a descrição, o público-alvo e os benefícios de cada matéria.">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+
+  <!-- Tipos de letra: Poppins (títulos) e Inter (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@500;600;700;800&amp;display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+  <!-- ===================== CABEÇALHO ===================== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <!-- Logo: para alterar, substitui o ficheiro images/logo.png -->
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="TURBO DISEL — página inicial" width="177" height="40">
+      </a>
+
+      <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="nav" id="menu-principal" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Início</a></li>
+          <li><a class="nav__link" href="materias.html" aria-current="page">Matérias</a></li>
+          <li><a class="nav__link" href="explicadores.html">Explicadores</a></li>
+          <li><a class="nav__link" href="plano-estudante.html">Plano Estudante</a></li>
+          <li><a class="nav__link" href="plano-explicador.html">Plano Explicador</a></li>
+          <li><a class="nav__link" href="sobre.html">Sobre Nós</a></li>
+          <li><a class="nav__link" href="contactos.html">Contactos</a></li>
+        </ul>
+        <a class="btn btn--primary nav__cta" href="contactos.html">Contactar agora</a>
+        <a class="btn btn--whatsapp nav__extra" href="https://wa.me/351932639201" data-whatsapp="central" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg> WhatsApp da Central</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- ===================== CABEÇALHO DA PÁGINA ===================== -->
+    <section class="page-hero bg-turbo" aria-labelledby="titulo-pagina">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Localização">
+          <ol>
+            <li><a href="index.html">Início</a></li>
+            <li aria-current="page">Matérias</li>
+          </ol>
+        </nav>
+        <h1 class="page-hero__title" id="titulo-pagina">Matérias</h1>
+        <p class="page-hero__text">Explicações adaptadas às tuas necessidades.</p>
+        <ul class="page-hero__links">
+          <li><a class="pill-link" href="#matematica"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v6M4 7h6M14 7h6M4.6 14.6l4.8 4.8M9.4 14.6l-4.8 4.8M14 15.5h6M14 19h6"/></svg> Matemática</a></li>
+          <li><a class="pill-link" href="#economia"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16"/><rect x="5.5" y="12" width="3" height="6" rx="1"/><rect x="10.5" y="8" width="3" height="10" rx="1"/><rect x="15.5" y="4" width="3" height="14" rx="1"/></svg> Economia</a></li>
+          <li><a class="pill-link" href="#ingles"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15a2 2 0 0 1-2 2H8l-4 4V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"/><path d="M9 13l3-7 3 7M10.1 10.5h3.8"/></svg> Inglês</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== MATÉRIAS ===================== -->
+    <div class="section">
+      <div class="container">
+        <!-- MATEMÁTICA -->
+        <section class="subject-section" id="matematica" aria-labelledby="titulo-matematica">
+          <div class="subject-section__media" data-reveal>
+            <img src="images/matematica.jpg" alt="Ilustração de uma parábola num referencial cartesiano, com um esquadro e símbolos matemáticos" width="1200" height="800" loading="lazy">
+          </div>
+          <div class="subject-section__content" data-reveal>
+            <div class="subject-section__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v6M4 7h6M14 7h6M4.6 14.6l4.8 4.8M9.4 14.6l-4.8 4.8M14 15.5h6M14 19h6"/></svg></div>
+            <h2 id="titulo-matematica">Matemática</h2>
+            <p class="subject-section__lead">Explicações para alunos do secundário e faculdade.</p>
+            <p class="subject-section__text">Trabalhamos a matéria passo a passo, ao ritmo de cada aluno: revemos a teoria, resolvemos exercícios em conjunto e treinamos com testes e exames de anos anteriores, para chegares ao dia da avaliação com método e confiança.</p>
+            <div class="info-block">
+              <h3>Público-alvo</h3>
+              <ul class="chip-list">
+                <li class="chip">Alunos do 10.º ao 12.º ano</li>
+                <li class="chip">Estudantes do ensino superior</li>
+                <li class="chip">Alunos que vão fazer exame nacional</li>
+              </ul>
+            </div>
+            <div class="info-block">
+              <h3>Benefícios</h3>
+              <ul class="check-list">
+                <li>Bases sólidas para acompanhar a matéria</li>
+                <li>Método claro para resolver problemas</li>
+                <li>Treino com exercícios ao estilo do exame</li>
+                <li>Mais confiança nos testes e no exame</li>
+              </ul>
+            </div>
+            <div class="subject-section__actions">
+              <a class="btn btn--primary" href="contactos.html?materia=matematica#formulario">Pedir explicações de Matemática</a>
+              <a class="btn btn--outline" href="plano-estudante.html">Ver preços</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- ECONOMIA -->
+        <section class="subject-section subject-section--invertida" id="economia" aria-labelledby="titulo-economia">
+          <div class="subject-section__media" data-reveal>
+            <img src="images/economia.jpg" alt="Ilustração de um gráfico de barras em crescimento, uma moeda de euro e um gráfico circular" width="1200" height="800" loading="lazy">
+          </div>
+          <div class="subject-section__content" data-reveal>
+            <div class="subject-section__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16"/><rect x="5.5" y="12" width="3" height="6" rx="1"/><rect x="10.5" y="8" width="3" height="10" rx="1"/><rect x="15.5" y="4" width="3" height="14" rx="1"/></svg></div>
+            <h2 id="titulo-economia">Economia</h2>
+            <p class="subject-section__lead">Explicações adaptadas aos conteúdos escolares e universitários.</p>
+            <p class="subject-section__text">Dos conceitos base aos gráficos e exercícios de cálculo, explicamos a Economia com exemplos do dia a dia, para que percebas a lógica de cada tema e saibas aplicá-la nos testes, nos trabalhos e no exame.</p>
+            <div class="info-block">
+              <h3>Público-alvo</h3>
+              <ul class="chip-list">
+                <li class="chip">Alunos do secundário (Ciências Socioeconómicas)</li>
+                <li class="chip">Estudantes de Economia, Gestão e áreas afins</li>
+                <li class="chip">Alunos que vão fazer exame nacional</li>
+              </ul>
+            </div>
+            <div class="info-block">
+              <h3>Benefícios</h3>
+              <ul class="check-list">
+                <li>Conceitos explicados com exemplos reais</li>
+                <li>Interpretação de gráficos e dados</li>
+                <li>Resolução de exercícios práticos</li>
+                <li>Preparação para testes, frequências e exames</li>
+              </ul>
+            </div>
+            <div class="subject-section__actions">
+              <a class="btn btn--primary" href="contactos.html?materia=economia#formulario">Pedir explicações de Economia</a>
+              <a class="btn btn--outline" href="plano-estudante.html">Ver preços</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- INGLÊS -->
+        <section class="subject-section" id="ingles" aria-labelledby="titulo-ingles">
+          <div class="subject-section__media" data-reveal>
+            <img src="images/ingles.jpg" alt="Ilustração de balões de conversa com as frases Hello! e How are you?" width="1200" height="800" loading="lazy">
+          </div>
+          <div class="subject-section__content" data-reveal>
+            <div class="subject-section__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15a2 2 0 0 1-2 2H8l-4 4V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"/><path d="M9 13l3-7 3 7M10.1 10.5h3.8"/></svg></div>
+            <h2 id="titulo-ingles">Inglês</h2>
+            <p class="subject-section__lead">Melhoria da gramática, vocabulário, compreensão e comunicação.</p>
+            <p class="subject-section__text">Aulas práticas que reforçam a gramática e alargam o vocabulário, com exercícios de leitura, escrita e conversação, para compreenderes melhor e comunicares em inglês com mais à-vontade, na escola, na faculdade e fora delas.</p>
+            <div class="info-block">
+              <h3>Público-alvo</h3>
+              <ul class="chip-list">
+                <li class="chip">Alunos do ensino secundário</li>
+                <li class="chip">Estudantes universitários</li>
+                <li class="chip">Alunos que vão fazer exame nacional</li>
+              </ul>
+            </div>
+            <div class="info-block">
+              <h3>Benefícios</h3>
+              <ul class="check-list">
+                <li>Gramática revista de forma clara</li>
+                <li>Vocabulário mais rico e variado</li>
+                <li>Melhor compreensão oral e escrita</li>
+                <li>Mais confiança a falar e a escrever</li>
+              </ul>
+            </div>
+            <div class="subject-section__actions">
+              <a class="btn btn--primary" href="contactos.html?materia=ingles#formulario">Pedir explicações de Inglês</a>
+              <a class="btn btn--outline" href="plano-estudante.html">Ver preços</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- ===================== CHAMADA PARA A AÇÃO ===================== -->
+    <section class="section section--sem-topo" aria-labelledby="titulo-cta">
+      <div class="container">
+        <div class="cta-panel bg-turbo" data-reveal>
+          <div>
+            <h2 id="titulo-cta">Não sabes por onde começar?</h2>
+            <p>Fala com a nossa central e ajudamos-te a escolher a matéria, o formato e o explicador certos para ti.</p>
+          </div>
+          <div class="cta-panel__actions">
+            <a class="btn btn--whatsapp btn--lg" href="https://wa.me/351932639201" data-whatsapp="central" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg> Falar com a Central</a>
+            <a class="btn btn--ghost btn--lg" href="explicadores.html">Ver explicadores</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <!-- Logo para fundo escuro: images/logo-branco.png -->
+          <img src="images/logo-branco.png" alt="TURBO DISEL" width="168" height="38">
+          <p>Explicações personalizadas em Matemática, Economia e Inglês para alunos do secundário e da faculdade.</p>
+          <p class="footer__slogan">Potencia o teu conhecimento. Acelera os teus resultados.</p>
+        </div>
+
+        <nav aria-label="Páginas do site">
+          <h2 class="footer__title">Navegação</h2>
+          <ul class="footer__links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="materias.html">Matérias</a></li>
+            <li><a href="explicadores.html">Explicadores</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="footer__title">Planos</h2>
+          <ul class="footer__links">
+            <li><a href="plano-estudante.html">Plano Estudante</a></li>
+            <li><a href="plano-estudante.html#plano-nota">Plano por Nota</a></li>
+            <li><a href="plano-explicador.html">Plano Explicador</a></li>
+            <li><a href="plano-explicador.html#beneficios">Torna-te explicador</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__contact">
+          <h2 class="footer__title">Central TURBO DISEL</h2>
+          <a class="footer__phone" href="https://wa.me/351932639201" data-whatsapp="central" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg> <span data-central-telefone>932 639 201</span></a>
+          <dl class="footer__hours">
+            <div><dt>Segunda a sexta</dt><dd data-horario="semana">09:00 — 20:00</dd></div>
+            <div><dt>Sábado</dt><dd data-horario="sabado">10:00 — 18:00</dd></div>
+            <div><dt>Domingo</dt><dd data-horario="domingo">Encerrado</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span data-ano>2026</span> TURBO DISEL. Todos os direitos reservados.</p>
+        <a href="https://www.livroreclamacoes.pt/" target="_blank" rel="noopener">Livro de Reclamações</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante do WhatsApp (central) -->
+  <a class="whatsapp-fab" href="https://wa.me/351932639201" data-whatsapp="central" target="_blank" rel="noopener" aria-label="Falar com a Central TURBO DISEL no WhatsApp"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg></a>
+</body>
+</html>
